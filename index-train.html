@@ -1,0 +1,91 @@
+
+<html lang="en-us">
+	<head>
+  <title>Train Schedule</title>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<!-- Firebase Reference -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+<!-- Moment.js Reference -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container text-center" style="background-color: burlywood; color: white; text-align: center">
+        <div class="row">
+          <div class="col-md-12">
+                      <h1>Anytime is Train Time<br/><small class="current-time"></small></h1>
+          </div>
+      </div>
+  </div>
+
+	<br>
+
+	<div class="row" >
+     <!--2nd table for current train Schedule-->
+
+     <div class="container-fill" style="border: 1px solid blue; margin: 5%">
+            <div class="header" style="background-color:blue; color:white;padding: 10px">
+              Current Train Schedule
+            </div>
+            <div class="card-body">
+                <table class="table" id="trainTable">
+                    <thead>
+                      <tr>
+                        <th scope="col">Train Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Frequency (min)</th>
+                        <th scope="col">Next Arrival</th>
+                        <th scope="col">Minutes Away</th>
+                      </tr>
+                    </thead>
+                    <tbody> </tbody> <!--content-->
+                  </table>
+            </div>
+      </div>
+
+  				</table>
+		</div>
+            
+            <br>
+
+            <!-- enter data-->
+			<form>
+			
+				<div class="form-group" style="border: 1px solid blue; margin: 5%">
+                    <div class="header" style="background-color:blue; color:white;padding: 10px">
+                                Add Train
+                    </div>
+                    <!-- <label for="name">T</label> -->
+                    <label for="name">TrainName</label>
+  					<input type="text" class="form-control" id="name">
+
+                    <!-- <label for="dest">Destination</label> -->
+                    <label for="dest">Destination</label>
+  					<input type="text" class="form-control" id="dest">
+			
+                    <!-- <label for="firstTrain">First Train Time (24:00)</label> -->
+                    <label for="firstTime">First Train Time(24:00) </label>
+  					<input type="text" class="form-control" id="firstTime">
+
+                      <!-- <label for="freq">Frequency (min)</label> -->
+                    <label for="freq">Frequency (min) </label>
+  					<input type="text" class="form-control" id="freq">
+  				
+  			 		<button class="btn btn-primary btn-lg" id="trainInfoBtn" type="submit">Submit</button>
+  			</div>
+      </form>
+
+    
+	<!-- javascript -->
+	<script src="javascript-train.js"></script>
+</body>
+</html

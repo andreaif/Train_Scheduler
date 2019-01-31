@@ -30,10 +30,10 @@ Here's a preview of the train scheduling application:
 
 ### Built With
 
-HTML
-CSS
-JavaScript
-Bootstrap Framework
-jQuery
-Firebase Database
-Moment.js
+* HTML
+* CSS
+* JavaScript
+* Bootstrap Framework
+* jQuery
+* Firebase Database
+* Moment.js
